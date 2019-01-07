@@ -1,0 +1,88 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_ws
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-26 08:41+0000\n"
+"PO-Revision-Date: 2018-11-26 09:46+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.2\n"
+
+#. module: partner_ws
+#: model:ir.model,name:partner_ws.model_res_partner
+msgid "Contact"
+msgstr "Contacte"
+
+#. module: partner_ws
+#: model:ir.model,name:partner_ws.model_account_invoice
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: partner_ws
+#: model:ir.model,name:partner_ws.model_purchase_order
+msgid "Purchase Order"
+msgstr "Commande fournisseur"
+
+#. module: partner_ws
+#: model:ir.model,name:partner_ws.model_sale_order
+msgid "Quotation"
+msgstr "Devis"
+
+#. module: partner_ws
+#: code:addons/partner_ws/models/partner.py:23
+#, python-format
+msgid "The partner id must be Integer!"
+msgstr "Le id du partenaire doit etre entier!"
+
+#. module: partner_ws
+#: code:addons/partner_ws/models/invoice.py:21
+#, python-format
+msgid "There is no account invoice for the partner"
+msgstr "Il n'existe aucune facture pour ce partenaire"
+
+#. module: partner_ws
+#: code:addons/partner_ws/models/partner.py:21
+#, python-format
+msgid "There is no partner with this ID, please put an other one!"
+msgstr "Il n'existe aucun partenaire avec ce ID, veuillez entrer un autre!"
+
+#. module: partner_ws
+#: code:addons/partner_ws/models/purchase.py:21
+#, python-format
+msgid "There is no purchase order for the partner"
+msgstr "Il n'existe aucune achat pour ce partenaire"
+
+#. module: partner_ws
+#: code:addons/partner_ws/models/sale.py:21
+#, python-format
+msgid "There is no sale order for the partner"
+msgstr "Il n'existe aucune vente pour ce partenaire"
+
+#. module: partner_ws
+#: code:addons/partner_ws/models/invoice.py:63
+#: code:addons/partner_ws/models/purchase.py:63
+#: code:addons/partner_ws/models/sale.py:62
+#: code:addons/partner_ws/models/stock.py:69
+#, python-format
+msgid "There is no sale order for the partner in this period!"
+msgstr "Il n'existe aucune vente pour ce partenaire dans cette période!"
+
+#. module: partner_ws
+#: code:addons/partner_ws/models/stock.py:21
+#, python-format
+msgid "There is no stock picking for the partner"
+msgstr "Il n'existe aucun transfert pour ce partenaire"
+
+#. module: partner_ws
+#: model:ir.model,name:partner_ws.model_stock_picking
+msgid "Transfer"
+msgstr "Transfert"
