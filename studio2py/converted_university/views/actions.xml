@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<odoo>
+
+  <record context="{}" id="classrooms_73ce6666-4ccb-4680-b60d-2f53353e315f" model="ir.actions.act_window">
+
+    <field eval="True" name="auto_search"/>
+
+    <field eval="False" name="binding_model_id"/>
+
+    <field name="binding_type">action</field>
+
+    <field name="context">{}</field>
+
+    <field eval="False" name="domain"/>
+
+    <field eval="False" name="filter"/>
+
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+
+    <field name="help"><![CDATA[<p>
+
+                        This is your new action ; by default, it contains a list view and a form view.
+
+                    </p>
+
+                    <p>
+
+                        You can start customizing these screens by clicking on the Studio icon on the
+
+                        top right corner (you can also customize this help message there).
+
+                    </p>
+
+                ]]></field>
+
+    <field name="limit">80</field>
+
+    <field eval="False" name="multi"/>
+
+    <field name="name">Classrooms</field>
+
+    <field name="res_model">x_classrooms</field>
+
+    <field eval="False" name="search_view_id"/>
+
+    <field eval="False" name="src_model"/>
+
+    <field name="target">current</field>
+
+    <field name="type">ir.actions.act_window</field>
+
+    <field eval="False" name="usage"/>
+
+    <field eval="False" name="view_id"/>
+
+    <field name="view_mode">tree,form</field>
+
+    <field name="view_type">form</field>
+
+  </record>
+
+  <record context="{}" id="departments_7a3685b1-8f1e-4935-82cd-72b42ccb880c" model="ir.actions.act_window">
+
+    <field eval="True" name="auto_search"/>
+
+    <field eval="False" name="binding_model_id"/>
+
+    <field name="binding_type">action</field>
+
+    <field name="context">{}</field>
+
+    <field eval="False" name="domain"/>
+
+    <field eval="False" name="filter"/>
+
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+
+    <field name="help"><![CDATA[<p>
+
+                        This is your new action ; by default, it contains a list view and a form view.
+
+                    </p>
+
+                    <p>
+
+                        You can start customizing these screens by clicking on the Studio icon on the
+
+                        top right corner (you can also customize this help message there).
+
+                    </p>
+
+                ]]></field>
+
+    <field name="limit">80</field>
+
+    <field eval="False" name="multi"/>
+
+    <field name="name">Departments</field>
+
+    <field name="res_model">x_departments</field>
+
+    <field eval="False" name="search_view_id"/>
+
+    <field eval="False" name="src_model"/>
+
+    <field name="target">current</field>
+
+    <field name="type">ir.actions.act_window</field>
+
+    <field eval="False" name="usage"/>
+
+    <field eval="False" name="view_id"/>
+
+    <field name="view_mode">tree,form</field>
+
+    <field name="view_type">form</field>
+
+  </record>
+
+  <record context="{}" id="proffessors_4eb2d3bd-d653-4359-a9df-f7454c8f7d4c" model="ir.actions.act_window">
+
+    <field eval="True" name="auto_search"/>
+
+    <field eval="False" name="binding_model_id"/>
+
+    <field name="binding_type">action</field>
+
+    <field name="context">{}</field>
+
+    <field eval="False" name="domain"/>
+
+    <field eval="False" name="filter"/>
+
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+
+    <field name="help"><![CDATA[<p>
+
+                        This is your new action ; by default, it contains a list view and a form view.
+
+                    </p>
+
+                    <p>
+
+                        You can start customizing these screens by clicking on the Studio icon on the
+
+                        top right corner (you can also customize this help message there).
+
+                    </p>
+
+                ]]></field>
+
+    <field name="limit">80</field>
+
+    <field eval="False" name="multi"/>
+
+    <field name="name">Proffessors</field>
+
+    <field name="res_model">x_proffessors</field>
+
+    <field eval="False" name="search_view_id"/>
+
+    <field eval="False" name="src_model"/>
+
+    <field name="target">current</field>
+
+    <field name="type">ir.actions.act_window</field>
+
+    <field eval="False" name="usage"/>
+
+    <field eval="False" name="view_id"/>
+
+    <field name="view_mode">tree,form</field>
+
+    <field name="view_type">form</field>
+
+  </record>
+
+  <record context="{}" id="students_291279ef-3079-42d4-a2e1-fca25f4a197e" model="ir.actions.act_window">
+
+    <field eval="True" name="auto_search"/>
+
+    <field eval="False" name="binding_model_id"/>
+
+    <field name="binding_type">action</field>
+
+    <field name="context">{}</field>
+
+    <field eval="False" name="domain"/>
+
+    <field eval="False" name="filter"/>
+
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+
+    <field name="help"><![CDATA[<p>
+
+                        This is your new action ; by default, it contains a list view and a form view.
+
+                    </p>
+
+                    <p>
+
+                        You can start customizing these screens by clicking on the Studio icon on the
+
+                        top right corner (you can also customize this help message there).
+
+                    </p>
+
+                ]]></field>
+
+    <field name="limit">80</field>
+
+    <field eval="False" name="multi"/>
+
+    <field name="name">students</field>
+
+    <field name="res_model">x_students</field>
+
+    <field eval="False" name="search_view_id"/>
+
+    <field eval="False" name="src_model"/>
+
+    <field name="target">current</field>
+
+    <field name="type">ir.actions.act_window</field>
+
+    <field eval="False" name="usage"/>
+
+    <field eval="False" name="view_id"/>
+
+    <field name="view_mode">tree,form</field>
+
+    <field name="view_type">form</field>
+
+  </record>
+
+  <record context="{}" id="subjects_3ec1326e-9d2a-4090-80a8-eef41ecb8be7" model="ir.actions.act_window">
+
+    <field eval="True" name="auto_search"/>
+
+    <field eval="False" name="binding_model_id"/>
+
+    <field name="binding_type">action</field>
+
+    <field name="context">{}</field>
+
+    <field eval="False" name="domain"/>
+
+    <field eval="False" name="filter"/>
+
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+
+    <field name="help"><![CDATA[<p>
+
+                        This is your new action ; by default, it contains a list view and a form view.
+
+                    </p>
+
+                    <p>
+
+                        You can start customizing these screens by clicking on the Studio icon on the
+
+                        top right corner (you can also customize this help message there).
+
+                    </p>
+
+                ]]></field>
+
+    <field name="limit">80</field>
+
+    <field eval="False" name="multi"/>
+
+    <field name="name">Subjects</field>
+
+    <field name="res_model">x_subjects</field>
+
+    <field eval="False" name="search_view_id"/>
+
+    <field eval="False" name="src_model"/>
+
+    <field name="target">current</field>
+
+    <field name="type">ir.actions.act_window</field>
+
+    <field eval="False" name="usage"/>
+
+    <field eval="False" name="view_id"/>
+
+    <field name="view_mode">tree,form</field>
+
+    <field name="view_type">form</field>
+
+  </record>
+
+</odoo>
+

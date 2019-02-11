@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record context="{'studio': True}" id="studio_customization.default_form_view_fo_ca9d9a74-07b5-43b7-90d7-f24d5f693c17" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <form>
+        <sheet string="students">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1"/>
+            </h1>
+          </div>
+          <group name="studio_group_4656eb">
+            <group name="studio_group_4656eb_left"/>
+            <group name="studio_group_4656eb_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_students</field>
+    <field name="name">Default form view for x_students</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__86774c3a-3537-435e-940a-3ab11e5a3a84" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//group[@name='studio_group_4656eb_left']" position="inside">
+          <field name="x_studio_field_q7jZ8" string="Birth Date"/>
+          <field name="x_studio_field_3QFQW" string="Address"/>
+          <field name="x_studio_field_IKyoq" string="Sexe"/>
+          <field name="x_studio_field_jlUcP" string="Age" invisible="1" attrs="{}"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_4656eb_right']" position="inside">
+          <field name="x_studio_field_AyhsB" string="Inscription date" required="1" attrs="{}"/>
+          <field name="x_studio_field_i414y" string="Classroom" widget="many2one"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_4656eb']" position="after">
+          <notebook name="studio_notebook_MiEZ5">
+            <page name="studio_page_MiEZ5" string="Proffessors">
+              <group name="studio_group_MiEZ5">
+                <field name="x_studio_field_9CyA7" attrs="{&quot;invisible&quot;: [[&quot;x_studio_field_jlUcP&quot;,&quot;=&quot;,20]]}"/>
+              </group>
+            </page>
+          </notebook>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]" position="after">
+          <div class="oe_chatter" name="studio_div_2065bc">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_form_view_fo_ca9d9a74-07b5-43b7-90d7-f24d5f693c17" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_students</field>
+    <field name="name">Odoo Studio: Default form view for x_students customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.default_tree_view_fo_a320ad04-07aa-45d3-afdd-e2c254319ab8" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <tree string="students">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_students</field>
+    <field name="name">Default tree view for x_students</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.default_form_view_fo_f59625ca-99d0-46d0-867d-ee65e6930d5e" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <form>
+        <sheet string="subjects">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1"/>
+            </h1>
+          </div>
+          <group name="studio_group_0450f4">
+            <group name="studio_group_0450f4_left"/>
+            <group name="studio_group_0450f4_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_subjects</field>
+    <field name="name">Default form view for x_subjects</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.default_form_view_fo_ced83fb7-fabf-4a8b-beeb-c04e61e1b13b" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <form>
+        <sheet string="proffessors">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1"/>
+            </h1>
+          </div>
+          <group name="studio_group_547ef7">
+            <group name="studio_group_547ef7_left"/>
+            <group name="studio_group_547ef7_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_proffessors</field>
+    <field name="name">Default form view for x_proffessors</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.default_tree_view_fo_29466e46-42aa-4d88-9ae0-4926a15fbe3d" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <tree string="subjects">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_subjects</field>
+    <field name="name">Default tree view for x_subjects</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.default_form_view_fo_19035b7d-6341-4ccb-89c0-8d1556a76e2d" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <form>
+        <sheet string="departments">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1"/>
+            </h1>
+          </div>
+          <group name="studio_group_ed7d96">
+            <group name="studio_group_ed7d96_left"/>
+            <group name="studio_group_ed7d96_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_departments</field>
+    <field name="name">Default form view for x_departments</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.default_form_view_fo_6cfe0d7f-44e2-4214-a2f0-d3165db961c9" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <form>
+        <sheet string="classrooms">
+          <div class="oe_title">
+            <h1>
+              <field name="x_name" required="1"/>
+            </h1>
+          </div>
+          <group name="studio_group_15a605">
+            <group name="studio_group_15a605_left"/>
+            <group name="studio_group_15a605_right"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_classrooms</field>
+    <field name="name">Default form view for x_classrooms</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__3a205cbe-fa06-4d60-84b7-4ac639d1a1b0" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//group[@name='studio_group_0450f4_left']" position="inside">
+          <field name="x_studio_field_5frFt" string="code subject"/>
+          <field name="x_studio_field_jbQGX" string="Number of proffessors" readonly="1" attrs="{}"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_0450f4_right']" position="inside">
+          <field name="x_studio_field_tgCMc" string="Department"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_0450f4']" position="after">
+          <notebook name="studio_notebook_4fKeS">
+            <page name="studio_page_4fKeS" string="Proffessors">
+              <group name="studio_group_4fKeS">
+                <field name="x_studio_field_3TRcW"/>
+              </group>
+            </page>
+            <page name="studio_page_3UPwb" string="Classrooms">
+              <group name="studio_group_3UPwb">
+                <field name="x_studio_field_QrHjn" attrs="{&quot;readonly&quot;: [[&quot;id&quot;,&quot;=&quot;,1]]}"/>
+              </group>
+            </page>
+          </notebook>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]" position="after">
+          <div class="oe_chatter" name="studio_div_ed670b">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_form_view_fo_f59625ca-99d0-46d0-867d-ee65e6930d5e" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_subjects</field>
+    <field name="name">Odoo Studio: Default form view for x_subjects customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.default_tree_view_fo_3ab6bd41-718d-44ac-b95a-64c190e6f3a0" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <tree string="proffessors">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_proffessors</field>
+    <field name="name">Default tree view for x_proffessors</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__864f35e2-4818-4747-b4ab-73681d02b286" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//group[@name='studio_group_547ef7_left']" position="inside">
+          <field name="x_studio_field_vPm32" widget="image"/>
+          <field name="x_studio_field_w2XeZ" string="Birth Date"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_547ef7_right']" position="inside">
+          <field name="x_studio_field_OIu8d" string="Sexe"/>
+          <field name="x_studio_field_fTRVz" string="Start Date "/>
+          <field name="x_studio_field_CA5cQ" string="Subject"/>
+          <field name="x_studio_field_m2OZR" string="Department"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_547ef7']" position="after">
+          <notebook name="studio_notebook_1iswy">
+            <page name="studio_page_1iswy" string="Classrooms">
+              <group name="studio_group_1iswy">
+                <field name="x_studio_field_0WZBi"/>
+              </group>
+            </page>
+          </notebook>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]" position="after">
+          <div class="oe_chatter" name="studio_div_597cc9">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_form_view_fo_ced83fb7-fabf-4a8b-beeb-c04e61e1b13b" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_proffessors</field>
+    <field name="name">Odoo Studio: Default form view for x_proffessors customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.default_tree_view_fo_c0c2af49-9dd5-46b6-9fd9-c1cfd4b2e04b" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <tree string="departments">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_departments</field>
+    <field name="name">Default tree view for x_departments</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__1c90cfc6-8f26-4fc0-8117-7f421abf4b70" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//group[@name='studio_group_ed7d96_left']" position="inside">
+          <field name="x_studio_field_C3DCI" string="code department"/>
+          <field name="x_studio_field_anKSn" string="Number of proffessors"/>
+          <field name="x_studio_field_WCOgl" string="Number of subjects"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_ed7d96_right']" position="inside">
+          <field name="x_studio_field_Q8ZEc" widget="priority"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_ed7d96']" position="after">
+          <notebook name="studio_notebook_eiXWD">
+            <page name="studio_page_eiXWD" string="Proffessors">
+              <group name="studio_group_eiXWD">
+                <field name="x_studio_field_y3ybp"/>
+              </group>
+            </page>
+            <page name="studio_page_kHUL8" string="Subjects">
+              <group name="studio_group_kHUL8">
+                <field name="x_studio_field_T31dO"/>
+              </group>
+            </page>
+          </notebook>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]" position="after">
+          <div class="oe_chatter" name="studio_div_17f104">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_form_view_fo_19035b7d-6341-4ccb-89c0-8d1556a76e2d" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_departments</field>
+    <field name="name">Odoo Studio: Default form view for x_departments customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__ca092cb3-7ece-4e1f-bd91-15e8704edcc8" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//group[@name='studio_group_15a605_left']" position="inside">
+          <field name="x_studio_field_BEoj2" string="code classroom"/>
+          <field name="x_studio_field_g2P2p" string="Level"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_15a605_right']" position="inside">
+          <field name="x_studio_field_ZlV1X" string="Number of students" groups="base.group_erp_manager"/>
+          <field name="x_studio_field_gKfHJ" string="Department"/>
+        </xpath>
+        <xpath expr="//group[@name='studio_group_15a605']" position="after">
+          <notebook name="studio_notebook_6Uz3a">
+            <page name="studio_page_6Uz3a" string="Proffessors">
+              <group name="studio_group_6Uz3a">
+                <field name="x_studio_field_zcMMg" groups="base.group_erp_manager"/>
+              </group>
+            </page>
+            <page name="studio_page_WUfkt" string="Students">
+              <group name="studio_group_WUfkt">
+                <field name="x_studio_field_8S1e1"/>
+              </group>
+            </page>
+          </notebook>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]" position="after">
+          <div class="oe_chatter" name="studio_div_974be3">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_form_view_fo_6cfe0d7f-44e2-4214-a2f0-d3165db961c9" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_classrooms</field>
+    <field name="name">Odoo Studio: Default form view for x_classrooms customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.default_tree_view_fo_6138b79a-c500-4110-acb7-df47c65a6c5c" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <tree string="classrooms">
+        <field name="x_name" modifiers="{}"/>
+      </tree>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field eval="False" name="inherit_id"/>
+    <field name="mode">primary</field>
+    <field name="model">x_classrooms</field>
+    <field name="name">Default tree view for x_classrooms</field>
+    <field name="priority">16</field>
+    <field name="type">tree</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__2724d8a5-f855-4a13-870c-5f3eb8578b7c" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="before">
+          <field name="id"/>
+          <field name="x_studio_field_BEoj2"/>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_field_gKfHJ"/>
+          <field name="x_studio_field_ZlV1X"/>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_tree_view_fo_6138b79a-c500-4110-acb7-df47c65a6c5c" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_classrooms</field>
+    <field name="name">Odoo Studio: Default tree view for x_classrooms customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__6ebde5e0-6c6f-4940-bc46-6c5d6aa73793" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="before">
+          <field name="x_studio_field_C3DCI"/>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_field_WCOgl"/>
+          <field name="x_studio_field_anKSn"/>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_tree_view_fo_c0c2af49-9dd5-46b6-9fd9-c1cfd4b2e04b" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_departments</field>
+    <field name="name">Odoo Studio: Default tree view for x_departments customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__d999dad1-a8b7-4767-8e3d-962e029e6c03" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="before">
+          <field name="id"/>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_field_w2XeZ"/>
+          <field name="x_studio_field_OIu8d"/>
+          <field name="x_studio_field_m2OZR"/>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_tree_view_fo_3ab6bd41-718d-44ac-b95a-64c190e6f3a0" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_proffessors</field>
+    <field name="name">Odoo Studio: Default tree view for x_proffessors customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__61b64038-6b1b-4aec-b770-ad61c25299bf" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="before">
+          <field name="id"/>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_field_jbQGX"/>
+          <field name="create_uid"/>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_tree_view_fo_29466e46-42aa-4d88-9ae0-4926a15fbe3d" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_subjects</field>
+    <field name="name">Odoo Studio: Default tree view for x_subjects customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+  <record context="{'studio': True}" id="studio_customization.odoo_studio_default__1f716ad4-6669-4511-b5d4-bb609559ec03" model="ir.ui.view">
+    <field eval="True" name="active"/>
+    <field type="xml" name="arch">
+      <data>
+        <xpath expr="//field[@name='x_name']" position="before">
+          <field name="id"/>
+        </xpath>
+        <xpath expr="//field[@name='x_name']" position="after">
+          <field name="x_studio_field_q7jZ8"/>
+          <field name="x_studio_field_jlUcP"/>
+          <field name="x_studio_field_IKyoq"/>
+          <field name="x_studio_field_3QFQW"/>
+        </xpath>
+      </data>
+    </field>
+    <field eval="False" name="field_parent"/>
+    <field eval="[(6, 0, [])]" name="groups_id"/>
+    <field ref="studio_customization.default_tree_view_fo_a320ad04-07aa-45d3-afdd-e2c254319ab8" name="inherit_id"/>
+    <field name="mode">extension</field>
+    <field name="model">x_students</field>
+    <field name="name">Odoo Studio: Default tree view for x_students customization</field>
+    <field name="priority">99</field>
+    <field name="type">tree</field>
+  </record>
+</odoo>
